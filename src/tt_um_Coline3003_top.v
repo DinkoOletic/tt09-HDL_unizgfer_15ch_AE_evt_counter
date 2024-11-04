@@ -48,5 +48,9 @@ module tt_um_Coline3003_top(
 	
     assign uio_out = 8'b0;
     assign uio_oe = 8'b0; //inputs enable
+
+    // List all unused inputs to prevent warnings
+    wire _unused = &{ena};
+	
 endmodule // top
 
